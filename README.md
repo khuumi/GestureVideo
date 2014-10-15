@@ -1,6 +1,6 @@
 GestureVideo
 =============
-Fall 2013/ COMSW4170
+Fall 2013 / COMSW4170
 
 This is an experiment in user interface for the User Interface Design class at Columbia University. It's basically a simple video player with the added ability to control playback using mouse gestures.
 
