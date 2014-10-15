@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>GestureVideo</title>
+
+  <!-- Included CSS Files -->
+<!--   <link rel="stylesheet" href="css/templates.css">
+ -->    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+
+   <link href="css/mbExtruder.css" media="all" rel="stylesheet" type="text/css">
+
+
+ <!--[if IE]><script src="excanvas.js"></script><![endif]-->
+  <link rel="stylesheet" type="text/css" href="buttons.css"/>
+<!--     <link rel="stylesheet" type="text/css" href="grid-5.css"/>
+ -->
+    <script type="text/javascript" src="canvas.text.js"></script>
+  <script type="text/javascript" src="./faces/gentilis-normal-normal.js"></script>
+  <script type="text/javascript" src="dollar.js"></script>
+  
+    <script src="jquery-1.7.2.min.js"></script>
+
+
+<script type="text/javascript" src="js/noty/jquery.noty.js"></script>
+
+<script type="text/javascript" src="js/noty/layouts/inline.js"></script>
+<script type="text/javascript" src="js/noty/layouts/top.js"></script>
+<script type="text/javascript" src="js/noty/layouts/topRight.js"></script>
+<script type="text/javascript" src="js/noty/layouts/center.js"></script>
+
+<!-- You can add more layouts if you want -->
+
+<script type="text/javascript" src="js/noty/themes/default.js"></script>
+<script type="text/javascript" src="js/noty/themes/newTheme.js"></script>
+
+
+  <script type="text/javascript" src="interaction.js"></script>
+
+  <script type="text/javascript" src="inc/jquery.hoverIntent.min.js"></script>
+  <script type="text/javascript" src="inc/jquery.mb.flipText.js"></script>
+  <script type="text/javascript" src="inc/mbExtruder.js"></script>
+
+
+
+</head>
+
+</head>
+
+
+<body style="zoom: 1";>
+<div class="wrapper">
+
+    <div id="extruderLeft" class="{title:'Mouse Gestures ' }"> 
+      
+      <table>
+  <tbody>
+    <tr>
+      <td>Pause/Play</td>
+      <td><img width="55px" src="images/pigtail.png"></td>
+    </tr>
+    <tr>
+      <td>Volume Up</td>
+      <td><img width="55px" src="images/v.png"></td>
+    </tr>
+     <tr>
+      <td>Volume Down</td>
+      <td><img width="55px" src="images/caret.png"></td>
+    </tr>
+     <tr>
+      <td>Mute/Unmute</td>
+      <td><img width="55px" src="images/circle.png"></td>
+    </tr>
+     <tr>
+      <td>Small Video</td>
+      <td><img width="55px" src="images/m.png"></td>
+    </tr>
+     <tr>
+      <td>Large Video</td>
+      <td><img width="55px" src="images/w.png"></td>
+    </tr>
+     <tr>
+      <td>Play Faster</td>
+      <td><img width="55px" src="images/uparrow.png"></td>
+    </tr>
+     <tr>
+      <td>Play Slower</td>
+      <td><img width="55px" src="images/downarrow.png"></td>
+    </tr>
+     <tr>
+      <td>Jump Forward</td>
+      <td><img width="55px" src="images/rightbracket.png"></td>
+    </tr>
+      <tr>
+      <td>Jump Backward</td>
+      <td><img width="55px" src="images/leftbracket.png"></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+    </div>
+    </div>
+
+
+    <div class="container">
+
+    <div id="customContainer"></div>
+  
+  </div>
+  
+  
+  <!-- Nav Bar -->
+
+  <div class="row">
+    <div class="twelve columns">
+      
+      <h4>GestureVideo <small>Controlling playback with mouse gestures</small></h4>
+      <hr />
+    </div>
+  </div>
+  <!-- End Nav -->
+
+
+  <!-- Main Page Content and Sidebar -->
+
+<!--   <div class="row">
+ -->
+
+
+  
+     <video id='video'
+      controls preload='none' width="1000" height="500"
+      poster="mongolia.jpg">
+      <source id='mp4'
+        src="mongolia.mp4"
+        type='video/mp4'>
+      <p>Your user agent does not support the HTML5 Video element.</p>
+    </video>
+    <canvas id="canvas" width="854" height="460">
+              <span style="background-color:#ffff88;">The &lt;canvas&gt; element is not supported by this browser.</span>
+            </canvas>
+
+</body>
+</html>
